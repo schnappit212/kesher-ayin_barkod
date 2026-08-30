@@ -7,6 +7,7 @@
 <style>
 :root{--blue:#0875bb;--green:#68aa35;--yellow:#f5c928;--red:#e64235;--soft:#f5f8fb;--text:#14253b}
 *{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:12px}
 body{margin:0;font-family:Arial,"Noto Sans Hebrew",sans-serif;color:var(--text);background:#eef2f5}
 .phone{max-width:520px;margin:auto;background:white;min-height:100vh;box-shadow:0 0 30px #0002}
 .top{display:grid;grid-template-columns:1fr 1fr 38px;gap:10px;align-items:center;padding:12px 14px;background:#fff}
@@ -18,7 +19,7 @@ body{margin:0;font-family:Arial,"Noto Sans Hebrew",sans-serif;color:var(--text);
 .heroText h1{font-size:39px;line-height:1.1;margin:0;color:var(--blue)}
 .heroText h1 span{color:var(--green)}
 .heroText p{font-size:24px;font-weight:700;margin:18px 0}
-.pill{display:inline-block;background:var(--green);color:#fff;padding:13px 34px;border-radius:40px;font-size:21px;font-weight:bold}
+.pill{display:inline-block;text-decoration:none;background:var(--green);color:#fff;padding:13px 34px;border-radius:40px;font-size:21px;font-weight:bold}
 section{padding:34px 22px}
 h2{color:var(--blue);font-size:30px;text-align:center;margin:0 0 18px}
 .lead{font-size:20px;line-height:1.55;text-align:center}
@@ -68,10 +69,10 @@ body{background:#e9eef2}.phone{overflow:hidden}.top{border-bottom:7px solid tran
 
 <div class="hero"><div class="heroText">
 <h1>שאלת את עצמך למה אנחנו<br><span>רצים מחוברים?</span></h1>
-<p>נשמח לספר.</p><div class="pill">קשר עין</div>
+<p>נשמח לספר.</p><a class="pill" href="#about">קשר עין</a>
 </div></div>
 
-<section>
+<section id="about">
 <div class="bluebox"><b>אנחנו קשר עין.</b><br><br>מועדון ריצה לעיוורים ולקויי ראייה ולמתנדבים שרצים איתם.<br><br><strong>רצים יחד, מחוברים ברצועת ליווי קטנה שמאפשרת לרץ הרואה להוביל את הרץ העיוור.</strong></div>
 
 </section>
@@ -104,14 +105,14 @@ body{background:#e9eef2}.phone{overflow:hidden}.top{border-bottom:7px solid tran
 <h2>רוצה לרוץ איתנו?</h2>
 <p class="lead">לא צריך לדעת איך מלווים רץ עיוור. <strong>את זה אנחנו נלמד אותך.</strong></p>
 <div class="ctas">
-<div class="cta green">🏃<br>אני רוצה להתנדב כמלווה</div>
-<div class="cta yellow">🦯<br>אני עיוור/לקוי ראייה ורוצה להצטרף</div>
+<a class="cta green" href="#contacts">🏃<br>אני רוצה להתנדב כמלווה</a>
+<a class="cta yellow" href="#contacts">🦯<br>אני עיוור/לקוי ראייה ורוצה להצטרף</a>
 <a class="cta facebook" href="https://www.facebook.com/profile.php?id=100088863600605&amp;locale=he_IL" target="_blank"><span class="social-icon">f</span><span>Facebook</span></a>
 <a class="cta instagram" href="https://www.instagram.com/eye_contact_israel/" target="_blank"><span class="social-icon">◎</span><span>Instagram</span></a>
 </div>
 </section>
 
-<section class="contacts">
+<section class="contacts" id="contacts">
 <h2>הצטרפו לקבוצה הקרובה</h2>
 <div class="contact jerusalem"><div><strong>ירושלים</strong><br>אלון · 052-3830429</div><a class="wa" href="https://wa.me/972523830429">WhatsApp</a></div>
 <div class="contact"><div><strong>חיפה</strong><br>מחמוד · 054-7370946</div><a class="wa" href="https://wa.me/972547370946">WhatsApp</a></div>
